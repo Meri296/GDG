@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:link{
+        color:rgb(120, 227, 227);
+    }
+    a:hover{
+        color: blue;
+        font-size: 1.1em;
+    }
+    a:active{
+        color:hsl(240, 51%, 25%)
+        font-size:1.1em;
+    }
+    a:visited{
+        color: gray;
+    }
+    #list li:hover{
+        background-color: deepskyblue;
+    }
+   #list li:not(:hover){
+        background-color: darkgrey;
+    }
+   #list li:nth-child(even){
+        background-color: cornsilk;
+    }
+    h1::first-letter{
+        font-size:2em;
+        font-style:italic
+    }
+    .p1::first-line{
+        background-color: blanchedalmond;
+    }
+    .p1::selection{
+        color:chartreuse;
+        background-color: black;
+
+    }
+    #fruit li::before{
+        
+    }
+    #apple::after{
+        content:"🍎" ;
+    }
+    #banana::after{
+        content:"🍌" ;
+    }
+    #orange::after{
+        content:"🍊" ;
+    }
+    #fruit li::marker{
+        content:"✔️" ;
+        color: blue;
+        font-size:1.2em ;
+
+    }
+    .pagination{
+        text-align: center;
+    }
+    .pagination a{
+        color: black;
+        text-decoration: none;
+        padding: 8px 15px;
+        display: inline-block;
+    }
+    .pagination a.active{
+        background-color: greenyellow;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+.pagination a:hover:not(.active){
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+     #container  {
+        border:2px solid;
+     } 
+     #container > p{
+        background-color: aqua;
+     }
+     .dropdown{
+            display: inline-block;
+        }
+        .dropdown button{
+            background-color: darkgray;
+            color: aliceblue;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            position: absolute;
+            background-color: rgb(232, 223, 223);
+            min-width: 100px;
+            box-shadow: 2px 2px 5px black;
+
+        }
+        .dropdown:hover .content{
+            display:block ;
+        }
+        .dropdown:hover button{
+            background-color: azure;
+        }
+        .dropdown a:hover{
+            background-color: azure;
+        }
+        body{
+background-image: url('white.jpg');
+background-size:contain;
+background-position: center;
+background-attachment: fixed;
+background-repeat: initial;
+}
+#overflow{
+    border: 2px solid;
+    height: 50px; overflow: scroll;
+}
+    #box1{
+        width: 200px;
+        height:200px;
+        background-color: aqua;
+        position: sticky;
+    }
+    #box2{
+        width: 100px;
+        height: 100px;
+        background-color: crimson;
+        position: absolute;
+    }
+    p{
+        color: rgb(0, 1, 1);
+    }
+  
+</style>
+<body>
+    <a href="https://google.com">Google</a>
+<ul id="list">
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+</ul>
+<h1>Hello</h1>
+<p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora assumenda nam quia, architecto omnis pariatur ea voluptates cupiditate numquam quidem, corporis delectus aspernatur blanditiis quas. Provident cupiditate porro reprehenderit magni.</p>
+<ul id="fruit">
+<li id="apple">apple</li>
+<li id="banana">banana</li>
+<li id="orange">orange</li>
+</ul>
+<h1>This is psge #1</h1>
+<p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, incidunt. Accusantium sunt eius quia molestiae blanditiis tenetur, aspernatur esse error, perferendis aliquid quam provident odit harum veniam pariatur libero id!</p>
+<div class="pagination">
+<a href="" ><</a>
+<a href="index.html" class="active">1</a>
+<a href="page2.html">2</a>
+<a href="page3.html">3</a>
+<a href="page4.html">4</a>
+<a href="page5.html">5</a>
+<a href="page2.html">></a>
+</div>
+<div id="container">
+    <p> Tise is num1</p>
+    <p> Tise is num2</p>
+<div>
+<p> Tise is num3</p>
+
+</div>
+  </div>
+  <p> Tise is num4</p>
+  <p> Tise is num5</p>
+  <div class="dropdown">
+    <button>Food</button>
+    <div class="content">
+        <a href="">Apple</a>
+        <a href="">Orange</a>
+        <a href="">Banana</a>
+    </div>
+</div>
+<p class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius tempore culpa deserunt odit itaque recusandae earum fugiat sequi veniam quasi aperiam, deleniti corporis officia aut qui ipsam esse quos neque.</p>
+<div id="overflow">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, rerum? Vel corrupti facilis odit esse, consequatur vitae velit cum at ipsa est voluptate, veritatis temporibus nam praesentium saepe reprehenderit atque!</p>
+</div>
+<div id="box1">,
+    <div id="box2"></div>
+</div>
+
+</body>
+
+</html>

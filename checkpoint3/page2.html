@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:link{
+        color:rgb(120, 227, 227);
+    }
+    a:hover{
+        color: blue;
+        font-size: 1.1em;
+    }
+    a:active{
+        color:hsl(240, 51%, 25%)
+        font-size:1.1em;
+    }
+    a:visited{
+        color: gray;
+    }
+    #list li:hover{
+        background-color: deepskyblue;
+    }
+   #list li:not(:hover){
+        background-color: darkgrey;
+    }
+   #list li:nth-child(even){
+        background-color: cornsilk;
+    }
+    h1::first-letter{
+        font-size:2em;
+        font-style:italic
+    }
+    .p1::first-line{
+        background-color: blanchedalmond;
+    }
+    .p1::selection{
+        color:chartreuse;
+        background-color: black;
+
+    }
+    #fruit li::before{
+        
+    }
+    #apple::after{
+        content:"🍎" ;
+    }
+    #banana::after{
+        content:"🍌" ;
+    }
+    #orange::after{
+        content:"🍊" ;
+    }
+    #fruit li::marker{
+        content:"✔️" ;
+        color: blue;
+        font-size:1.2em ;
+
+    }
+    .pagination{
+        text-align: center;
+    }
+    .pagination a{
+        color: black;
+        text-decoration: none;
+        padding: 8px 15px;
+        display: inline-block;
+    }
+    .pagination a.active{
+        background-color: greenyellow;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+.pagination a:hover:not(.active){
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+    <a href="https://google.com">Google</a>
+<ul id="list">
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+    <li>this is #1</li>
+</ul>
+<h1>Hello</h1>
+<p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora assumenda nam quia, architecto omnis pariatur ea voluptates cupiditate numquam quidem, corporis delectus aspernatur blanditiis quas. Provident cupiditate porro reprehenderit magni.</p>
+<ul id="fruit">
+<li id="apple">apple</li>
+<li id="banana">banana</li>
+<li id="orange">orange</li>
+</ul>
+<h1>This is psge #2</h1>
+<p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, incidunt. Accusantium sunt eius quia molestiae blanditiis tenetur, aspernatur esse error, perferendis aliquid quam provident odit harum veniam pariatur libero id!</p>
+<div class="pagination">
+<a href="" ><</a>
+<a href="index.html" >1</a>
+<a href="page2.html" class="active">2</a>
+<a href="page3.html">3</a>
+<a href="page4.html">4</a>
+<a href="page5.html">5</a>
+<a href="page3.html">></a>
+</div>
+
+</body>
+
+</html>
